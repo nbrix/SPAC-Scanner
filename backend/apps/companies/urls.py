@@ -1,0 +1,43 @@
+from django.urls import path
+from .views import (
+    ListCompany, 
+    DetailCompany, 
+    ListNews, 
+    ListGainers, 
+    ListMostActive, 
+    ListLosers, 
+    DetailExchange,
+    DetailNews,
+    ListQuote,
+    ListSecFiles,
+    DetailSecFiles,
+    ListTargetProfile,
+    ListSparkline,
+    ListAllSpacs,
+    UserPortfolioView,
+    AddPortfolioView,
+    RemovePortfolioView,
+    ListManagement
+)
+
+urlpatterns = [
+    path('details/<str:common_ticker_symbol>', DetailCompany.as_view()),
+    path('', ListCompany.as_view()),
+    path('all-companies/', ListCompany.as_view()),
+    path('all-news/', ListNews.as_view()),
+    path('news/<str:pk>/', DetailNews.as_view()),
+    path('gainers/', ListGainers.as_view()),
+    path('losers/', ListLosers.as_view()),
+    path('quote/<str:symbol>', ListQuote.as_view()),
+    path('most-active/', ListMostActive.as_view()),
+    path('exchange/<str:symbol>', DetailExchange.as_view()),
+    path('sec-filings/', ListSecFiles.as_view()),
+    path('sec-filings/<str:symbol>', DetailSecFiles.as_view()),
+    path('target/', ListTargetProfile.as_view()),
+    path('sparkline/', ListSparkline.as_view()),
+    path('all-spacs/', ListAllSpacs.as_view()),
+    path('portfolio/', UserPortfolioView.as_view()),
+    path('add-portfolio/', AddPortfolioView.as_view()),
+    path('remove-portfolio/', RemovePortfolioView.as_view()),
+    path('management/', ListManagement.as_view()),
+]

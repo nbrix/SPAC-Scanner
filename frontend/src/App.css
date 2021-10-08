@@ -1,0 +1,53 @@
+.green {
+  color: #07b607;
+}
+
+.red {
+  color: #ee221e;
+}
+
+.ui.form input[type="checkbox"],
+.ui.form textarea {
+  vertical-align: middle !important;
+}
+
+.right-aligned {
+  text-align: right;
+}
+
+.screener-column {
+  width: 10px;
+}
+
+.sticky {
+  overflow: scroll;
+}
+
+td,
+th {
+  background-color: #fff;
+}
+[data-sticky-last-left-td] {
+  box-shadow: 2px 0px 3px #ccc;
+}
+
+.collapse {
+  width: 0.0000000001%;
+}
+.ui.secondary.pointing.menu .item:hover {
+  font-weight: bold !important;
+  text-decoration: none !important;
+}
+a:hover {
+  text-decoration: underline !important;
+}
+
+body {
+  background-color: whitesmoke !important;
+}
+
+@media only screen and (max-width: 1150px) {
+  .searchbar {
+    display: none;
+  }
+}

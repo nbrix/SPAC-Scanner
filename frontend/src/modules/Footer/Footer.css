@@ -1,0 +1,28 @@
+.ui.button-link {
+  padding: 0;
+  background: none;
+  border: none;
+  color: gray;
+}
+.ui.button-link:hover {
+  padding: 0;
+  background: none;
+  border: none;
+  color: white;
+  text-decoration: underline;
+}
+
+iframe {
+  width: 100%;
+  min-height: 400px;
+  height: 50%;
+  border: none;
+}
+.email {
+  color: gray;
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-weight: 700;
+}
+.email:hover {
+  color: white;
+}

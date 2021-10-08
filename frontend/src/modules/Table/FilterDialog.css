@@ -1,0 +1,19 @@
+.ui.button.reset-button {
+  float: right;
+  border: none;
+  background: none;
+  color: #0000ee;
+  font-weight: normal;
+  padding: 0;
+}
+.ui.button.reset-button:hover {
+  text-decoration: underline;
+}
+
+.checkbox-label {
+  margin-left: 10px;
+}
+
+.ui.grid {
+    padding-top: 10px;
+}

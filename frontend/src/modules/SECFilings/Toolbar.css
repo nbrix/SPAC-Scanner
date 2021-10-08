@@ -1,0 +1,23 @@
+.ui.form .field .checkbox > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  font-size: x-small;
+}
+
+.ui.form .field .checkbox > label > input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+}
+
+.ui.form .field .submit-button {
+  margin-left: auto;
+  order: 2;
+}
+
+.ui.form {
+    width: 100%;
+}

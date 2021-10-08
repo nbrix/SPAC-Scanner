@@ -1,0 +1,12 @@
+FROM node:12.18-alpine as build
+
+WORKDIR /spacscanner/frontend
+
+COPY . /spacscanner/frontend
+
+ARG API_URL
+ENV HOST_IP_ADDRESS $API_URL
+
+RUN yarn
+
+COPY . /spacscanner/frontend/
